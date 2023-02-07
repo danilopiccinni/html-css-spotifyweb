@@ -39,9 +39,73 @@ footer {
 }
 
 main {
+    display: flex;
+
     position: relative;
     background-color: #141922;
 }
+
+.main-dx {
+
+    display: flex;
+}
+
+
+.main-dx {
+    width: 100%;
+    height: calc(100vh - 100px);
+    padding-top: 100px;
+    
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;
+
+}
+
+/* Chicca */
+
+/* nasconde la scrollbar per Chrome, Safari and Opera */
+.main-dx::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* /* nasconde la scrollbar per IE, Edge e Firefox */
+  .main-dx {
+    -ms-overflow-style: none;  /* IE e Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  /* /Chicca */
+
+
+.row {
+    width: 100%;
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 30px;
+
+
+}
+.col {
+    /* test */
+    background-color: red;
+
+    width: calc((100vw - 180px) / 6 - (30px / 6 * 5) );
+    height: calc(((100vw - 180px) / 6 - 30px) );
+}
+
+.row-2,
+.row-3 {
+    justify-content: flex-start;
+
+}
+
+.row-3 .col{
+    border-radius: 50%;
+}
+
 
 
 
@@ -100,8 +164,83 @@ main {
     color: white;
 }
 
-
-
 /* /nav */
 
 
+/* footer/playbar */
+
+.play-bar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-sx img {
+    width: 80px;
+    height: 80px;
+
+}
+
+.footer-sx {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 10px;
+}
+
+.footer-sx .icone-sx {
+    display: flex;
+    gap: 15px;
+    padding-left: 25px;
+
+}
+.foot-autore {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-center {
+    width: 60%;
+    max-width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.footer-center .center-down {
+    width: 100%;
+}
+
+.footer-center .center-up ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 20px;
+}
+
+.scorrimento-vuoto {
+    height: 2px;
+    width: 100%;
+    border: 2px solid white;
+}
+
+.footer-dx {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 10px;
+}
+
+.footer-dx .volume {
+    width: 100px;
+    height: 1px;
+    border: 1px solid white;
+}
