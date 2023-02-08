@@ -154,10 +154,32 @@ main {
 .square {
     /* test */
     /* background-color: red; */
-
+    position: relative;
     width: calc((100vw - 180px) / 6 - (30px / 6 * 5) );
     height: calc(((100vw - 180px) / 6 - 30px) );
 }
+
+.square i {
+    position: absolute;
+    z-index: 1;
+    right: 58%;
+    left: 42%;
+    bottom: 57%;
+    top: 43%;
+    color: white;
+    font-size: 2em;
+    
+    opacity: 0;
+}
+
+.square:hover > i {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.square:hover > img {
+    filter: blur(2px);
+} 
 
 .details {
     display: flex;
