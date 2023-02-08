@@ -206,20 +206,20 @@ main {
     font-size: 10px;
 }
 
-.green-bar {
-    width: 50%;
-    height: 2px;
-    margin: auto;
-    text-align: center;
-    background-color: #adff30;
 
-    /* no hover */
-    display: none;
+.nav-main > div hr {
+    width: 50%;
+    margin: auto;
+    color: #adff30;
+    opacity: 0;
 }
 
-.nav-main div:hover .green-bar {
-    display: block;
-    background-color: #adff30;
+.nav-main div:hover > hr  {
+    opacity: 1;
+}
+
+.nav-main div:hover > a  {
+    color: white;
 }
 
 /* Chicca */
