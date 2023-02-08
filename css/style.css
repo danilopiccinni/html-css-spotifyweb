@@ -436,7 +436,7 @@ footer img:hover {
     cursor: pointer;
 }
 
-.fa-circle-play:hover {
+footer .fa-circle-play:hover {
     scale: 110%;
 }
 
