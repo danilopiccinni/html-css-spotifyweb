@@ -269,7 +269,7 @@ main {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: calc(100% - 150px);
+    width: calc(100vw - 150px);
     position: fixed;
     z-index: 1;
     top: 0;
@@ -319,9 +319,10 @@ footer {
 }
 
 .footer-sx {
-    min-width: 100px;
+    min-width: 200px;
     display: flex;
-    justify-content: ;
+    flex-wrap: wrap;
+
     align-items: center;
     gap: 15px;
     padding-left: 10px;
@@ -341,49 +342,49 @@ footer {
 }
 
 .footer-center {
-    width: 800px;
-    max-width: 800px;
-    min-width: 200px;
+
+    width: 100%;
+    max-width: 500px;
+    min-width: 100px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    flex-grow: 1;
 }
 
 .footer-center .center-down {
-    min-width: 200px;
+
+    width: 100%;
+
+    min-width: 100px;
+
     display: flex;
     align-items: center;
-    gap: 15px;
-    width: 100%;
+    gap: 5px;
+
     color: #c1c1c1;
 }
 
 .footer-center .center-up {
+
+    width: 50%;
+    min-width: 150px;
     display: flex;
-    justify-content: center;
-    width: 400px;
-    max-width: 800px;
-}
-
-
-.footer-center .center-up ul {
-
-    display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
     font-size: 20px;
     color: #c1c1c1;
+
+    max-width: 800px;
 }
-
-
 
 .scorrimento-vuoto {
     height: 5px;
     width: 100%;
     background-color: #717171;
-
 }
 
 .scorrimento {
@@ -397,7 +398,7 @@ footer {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: space-between;
     gap: 20px;
 
     color: #c1c1c1;
