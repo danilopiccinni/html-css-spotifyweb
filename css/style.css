@@ -206,6 +206,22 @@ main {
     font-size: 10px;
 }
 
+.green-bar {
+    width: 50%;
+    height: 2px;
+    margin: auto;
+    text-align: center;
+    background-color: #adff30;
+
+    /* no hover */
+    display: none;
+}
+
+.nav-main div:hover .green-bar {
+    display: block;
+    background-color: #adff30;
+}
+
 /* Chicca */
 /* nasconde la scrollbar per Chrome, Safari and Opera */
 .main-dx::-webkit-scrollbar {
@@ -291,8 +307,9 @@ footer {
 
 .footer-sx .icone-sx {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
-    padding-left: 25px;
+
 
 }
 .foot-autore {
@@ -301,7 +318,7 @@ footer {
 }
 
 .footer-center {
-    width: 100%;
+    width: 800px;
     max-width: 800px;
     min-width: 200px;
     display: flex;
@@ -311,7 +328,7 @@ footer {
 }
 
 .footer-center .center-down {
-
+    width: 800px;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -319,14 +336,24 @@ footer {
     color: #c1c1c1;
 }
 
+.footer-center .center-up {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+}
+
 
 .footer-center .center-up ul {
+
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 50px;
     font-size: 20px;
     color: #c1c1c1;
+}
+
+.footer-center .center-up ul li {
+    padding: 0 30px;
 }
 
 .scorrimento-vuoto {
