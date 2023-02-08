@@ -2,11 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    /* test */
-    /* border: 1px solid red; */
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ------------------- */
+/* header-nav */
 header {
     display: flex;
     flex-direction: column;
@@ -14,9 +18,9 @@ header {
     width: 180px;
     background-color: black;
     height: calc(100vh - 100px);
-    color: white;
+    color: #717171;
     padding: 20px;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 nav {
@@ -30,7 +34,6 @@ ul {
     flex-direction: column;
     gap: 15px;
     list-style-type: none;
-    
 }
 
 footer {
@@ -38,56 +41,87 @@ footer {
     background-color: gray;
 }
 
+.foot-header {
+    height: 5%%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.playlist {
+    padding-top: 10px;
+}
+
+.logo {
+    width: 120px;
+}
+
+.fa-grip-lines-vertical,
+.fa-magnifying-glass,
+.fa-house,
+.fa-plus,
+.fa-circle-user {
+    font-size: 20px;
+    color: #a3a3a3;
+}
+
+.fa-plus {
+    background-color: #a3a3a3;
+    color: black;
+    padding: 2px 4px;
+}
+
+.new-playlist a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.foot-header a{
+    display: flex;
+    align-items: center;
+    color: #717171;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.head-playlist {
+    font-size: 15px;
+    color: white;
+}
+
+.playlist a,
+.navigation a {
+    text-decoration: none;
+    color: #717171;
+}
+
+header a:hover {
+    color: white;
+}
+
+/* /header-nav */
+/* ------------------- */
+
+
+
+/* ----------------------- */
+/* main */
+
 main {
     display: flex;
-
     position: relative;
     background-color: #141922;
 }
 
-.main-dx {
-
-    display: flex;
-}
-
-
-.main-dx {
-    width: 100%;
-    height: calc(100vh - 100px);
-    padding-top: 100px;
-    
-    display: flex;
-    flex-direction: column;
-
-    overflow-y: auto;
-
-}
-
-/* Chicca */
-
-/* nasconde la scrollbar per Chrome, Safari and Opera */
-.main-dx::-webkit-scrollbar {
-    display: none;
-  }
-  
-  /* /* nasconde la scrollbar per IE, Edge e Firefox */
-  .main-dx {
-    -ms-overflow-style: none;  /* IE e Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
-
-  /* /Chicca */
-
-
 .row {
     width: 100%;
     display: flex;
-
     flex-wrap: wrap;
     gap: 30px;
-
-
 }
+
 .col {
     /* test */
     background-color: red;
@@ -99,17 +133,40 @@ main {
 .row-2,
 .row-3 {
     justify-content: flex-start;
-
 }
 
 .row-3 .col{
     border-radius: 50%;
 }
 
+.main-dx {
+    display: flex;
+}
 
+.main-dx {
+    width: 100%;
+    height: calc(100vh - 100px);
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
 
+/* Chicca */
+/* nasconde la scrollbar per Chrome, Safari and Opera */
+.main-dx::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* /* nasconde la scrollbar per IE, Edge e Firefox */
+  .main-dx {
+    -ms-overflow-style: none;  /* IE e Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  /* /Chicca */
 
-/* nav */
+/* /main */
+/* ----------------------- */
 
 .bar-upgrade {
     width: calc(100% - 150px);
@@ -121,53 +178,9 @@ main {
     background-color: rgba(0, 0, 0, 0.226);
 }
 
-.foot-header {
-    height: 10%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
 
-}
-
-.playlist {
-    padding-top: 10px;
-}
-
-.logo {
-    width: 120px;
-
-
-}
-
-.fa-grip-lines-vertical,
-.fa-magnifying-glass,
-.fa-house,
-.fa-plus,
-.fa-circle-user {
-    font-size: 20px;
-}
-
-.fa-plus {
-    background-color: white;
-    color: black;
-    padding: 2px 4px;
-}
-
-.new-playlist {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.foot-header a{
-    color: white;
-}
-
-/* /nav */
-
-
-/* footer/playbar */
+/* ------------------------- */
+/* footer-playbar */
 
 .play-bar {
     height: 100%;
@@ -179,7 +192,6 @@ main {
 .footer-sx img {
     width: 80px;
     height: 80px;
-
 }
 
 .footer-sx {
@@ -199,18 +211,15 @@ main {
 .foot-autore {
     display: flex;
     flex-direction: column;
-    
 }
 
 .footer-center {
     width: 60%;
     max-width: 60%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-
 }
 
 .footer-center .center-down {
@@ -244,3 +253,6 @@ main {
     height: 1px;
     border: 1px solid white;
 }
+
+/* /footer-playbar */
+/* ------------------------- */
