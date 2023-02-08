@@ -202,7 +202,6 @@ main {
 footer {
     height: 100px;
     background-color: #282828;
-
 }
 
 .play-bar {
@@ -307,6 +306,16 @@ footer {
 
 .fa-circle-play {
     font-size: 40px;
+}
+
+footer i:hover,
+footer .barra-volume:hover,
+footer .volume:hover,
+footer .scorrimento:hover,
+footer .scorrimento-vuoto:hover,
+footer span:hover,
+footer img:hover {
+    cursor: pointer;
 }
 
 /* /footer-playbar */
