@@ -348,13 +348,12 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 20px;
     font-size: 20px;
     color: #c1c1c1;
 }
 
-.footer-center .center-up ul li {
-    padding: 0 30px;
-}
+
 
 .scorrimento-vuoto {
     height: 2px;
