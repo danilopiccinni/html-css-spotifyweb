@@ -356,14 +356,14 @@ footer {
 
 
 .scorrimento-vuoto {
-    height: 2px;
+    height: 5px;
     width: 100%;
     background-color: #717171;
 
 }
 
 .scorrimento {
-    height: 2px;
+    height: 5px;
     width: 35%;
     background-color: #c1c1c1;
 }
@@ -380,13 +380,13 @@ footer {
 
 .footer-dx .barra-volume {
     width: 100px;
-    height: 1px;
+    height: 5px;
     background-color: #5a5a5a;
 }
 
 .footer-dx .volume {
     width: 25%;
-    height: 1px;
+    height: 5px;
     background-color: #c1c1c1;
 }
 
@@ -408,9 +408,28 @@ footer .barra-volume:hover,
 footer .volume:hover,
 footer .scorrimento:hover,
 footer .scorrimento-vuoto:hover,
-footer span:hover,
+
 footer img:hover {
+    color: white;
     cursor: pointer;
+}
+
+.fa-circle-play:hover {
+    scale: 110%;
+}
+
+.footer-sx .brano:hover,
+.footer-sx .autore:hover{
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer .scorrimento:hover,
+footer .scorrimento-vuoto:hover > .scorrimento,
+footer .barra-volume:hover > .volume,
+footer .volume:hover {
+    background-color: #adff30;
 }
 
 /* /footer-playbar */
