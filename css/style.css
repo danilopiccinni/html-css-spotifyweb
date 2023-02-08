@@ -164,13 +164,35 @@ main {
 /* ----------------------- */
 
 .bar-upgrade {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: calc(100% - 150px);
     position: fixed;
     z-index: 1;
     top: 0;
     right: 0;
     height: 70px;
+    padding-right: 15px;
     background-color: rgba(0, 0, 0, 0.226);
+}
+
+.bar-upgrade a {
+    font-size: 10px;
+    color: #5a5a5a;
+    border: 1px solid #5a5a5a;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 2s;
+
+}
+
+.bar-upgrade a:hover {
+    transition: 2s;
+    color: #d2d2d2;
+    border-color:#d2d2d2;
+    font-size: 15px;
 }
 
 
