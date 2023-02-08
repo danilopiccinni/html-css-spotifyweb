@@ -292,6 +292,7 @@ main {
 
 .square img {
     width: 100%;
+    height: 100%;
 }
 
 /* /main */
@@ -503,7 +504,7 @@ footer .volume:hover {
 
     .square {
         width: calc((100vw - 180px) / 2 - (30px / 2) );
-        height: calc(((100vw - 180px) / 4 - (30px / 2 )) );
+        height: calc(((100vw - 180px) / 2 - (30px / 2 )) );
     }
 }
 
@@ -514,7 +515,7 @@ footer .volume:hover {
 
     .square {
         width: calc((100vw - 180px) / 2 - (30px / 2) );
-        height: calc(((100vw - 180px) / 4 - (30px / 2 )) );
+        height: calc(((100vw - 180px) / 2 - (30px / 2 )) );
     }
 }
 
