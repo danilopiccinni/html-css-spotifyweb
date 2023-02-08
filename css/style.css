@@ -112,7 +112,7 @@ main {
 
 .main-section h2 {
     color: #d2d2d2;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-left: 5px;
 }
 
@@ -120,6 +120,17 @@ main {
     color:#717171;
     padding-top: 5px;
     padding-left: 5px;
+    font-size: 10px;
+}
+
+.main-section h4 {
+    font-size: 10px;
+}
+
+.main-section h3 {
+    font-size: 15px;
+    color: #c1c1c1;
+    padding-top: 10px;
 }
 
 .row {
@@ -159,6 +170,10 @@ main {
 .row-2,
 .row-3 {
     justify-content: flex-start;
+}
+
+.row-3 {
+    padding-bottom: 20px;
 }
 
 .row-3 .square img{
