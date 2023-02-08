@@ -36,11 +36,6 @@ ul {
     list-style-type: none;
 }
 
-footer {
-    height: 100px;
-    background-color: gray;
-}
-
 .foot-header {
     height: 5%%;
     display: flex;
@@ -98,7 +93,7 @@ footer {
 }
 
 header a:hover {
-    color: white;
+    color: #d2d2d2;
 }
 
 /* /header-nav */
@@ -182,6 +177,12 @@ main {
 /* ------------------------- */
 /* footer-playbar */
 
+footer {
+    height: 100px;
+    background-color: #282828;
+
+}
+
 .play-bar {
     height: 100%;
     display: flex;
@@ -190,8 +191,8 @@ main {
 }
 
 .footer-sx img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 }
 
 .footer-sx {
@@ -200,6 +201,7 @@ main {
     align-items: center;
     gap: 15px;
     padding-left: 10px;
+    color: #c1c1c1;
 }
 
 .footer-sx .icone-sx {
@@ -214,8 +216,7 @@ main {
 }
 
 .footer-center {
-    width: 60%;
-    max-width: 60%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -223,20 +224,32 @@ main {
 }
 
 .footer-center .center-down {
+    display: flex;
+    align-items: center;
+    gap: 15px;
     width: 100%;
+    color: #c1c1c1;
 }
 
 .footer-center .center-up ul {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 50px;
     font-size: 20px;
+    color: #c1c1c1;
 }
 
 .scorrimento-vuoto {
     height: 2px;
     width: 100%;
-    border: 2px solid white;
+    border: 2px solid #5a5a5a;
+}
+
+.scorrimento {
+    height: 2px;
+    width: 35%;
+    border: 2px solid #c1c1c1; 
 }
 
 .footer-dx {
@@ -246,12 +259,32 @@ main {
     justify-content: flex-end;
     gap: 20px;
     padding-right: 10px;
+    color: #c1c1c1;
+}
+
+.footer-dx .barra-volume {
+    width: 100px;
+    height: 1px;
+    border: 1px solid #5a5a5a;
 }
 
 .footer-dx .volume {
-    width: 100px;
+    width: 25%;
     height: 1px;
-    border: 1px solid white;
+    border: 1px solid #c1c1c1;
+}
+
+.footer-sx .brano {
+    color: #5a5a5a;
+    font-size: 10px;
+}
+
+.footer-sx .autore {
+    font-size: 12px;
+}
+
+.fa-circle-play {
+    font-size: 40px;
 }
 
 /* /footer-playbar */
