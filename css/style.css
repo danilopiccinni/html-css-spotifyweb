@@ -218,6 +218,7 @@ main {
 .nav-main {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 25px;
     font-weight: bold;
 }
@@ -394,6 +395,7 @@ footer {
     min-width: 200px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: flex-end;
     gap: 20px;
     padding-right: 10px;
