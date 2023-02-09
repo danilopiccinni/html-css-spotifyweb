@@ -420,6 +420,8 @@ footer {
 }
 
 .scorrimento {
+    position: relative;
+
     height: 5px;
     width: 35%;
     background-color: #c1c1c1;
@@ -443,6 +445,8 @@ footer {
 }
 
 .footer-dx .volume {
+    position: relative;
+
     width: 25%;
     height: 5px;
     background-color: #c1c1c1;
@@ -488,6 +492,25 @@ footer .scorrimento-vuoto:hover > .scorrimento,
 footer .barra-volume:hover > .volume,
 footer .volume:hover {
     background-color: #adff30;
+}
+
+.pallino-scorrimento {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+    background-color: #adff30;
+    
+    display: none;
+}
+
+.scorrimento-vuoto:hover .pallino-scorrimento,
+.barra-volume:hover .pallino-scorrimento {
+    display: block;
 }
 
 /* /footer-playbar */
@@ -587,7 +610,7 @@ footer .volume:hover {
     .footer-sx .icone-sx {
         flex-direction: column;
     }
-    
+
     .row {
         flex-wrap: wrap;
     }
