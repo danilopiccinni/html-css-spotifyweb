@@ -216,7 +216,7 @@ main {
 }
 
 .square:hover > img {
-    filter: blur(2px);
+    opacity: 0.5;
 } 
 
 .details {
