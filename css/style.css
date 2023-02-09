@@ -20,7 +20,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
 
-    width: 180px;
+    min-width: 200px;
     height: calc(100vh - 100px);
 
     background-color: black;
@@ -119,6 +119,12 @@ nav a {
 header a:hover {
     color: white;
 }
+.nav-up {
+    width: 100%;
+}
+.cont-logo {
+    width: 100%;
+}
 
 
 /* presumo un bonus dato per ora a tutti i componenti della nav
@@ -169,7 +175,7 @@ main {
     display: flex;
 
 
-    gap: 30px;
+    gap: 15px;
     padding-left: 5px;
 }
 
@@ -187,8 +193,8 @@ main {
     /* test */
     /* background-color: red; */
     position: relative;
-    width: calc((100vw - 180px) / 6 - (30px / 6 * 5) );
-    height: calc(((100vw - 180px) / 6 - 30px) );
+    width: calc(((100vw - 200px) / 6 - 20px) );
+    height: calc(((100vw - 200px) / 6 - 20px) );
 }
 
 .square i {
@@ -239,7 +245,7 @@ main {
 }
 
 .main-dx {
-    width: 100%;
+    width: calc(100vw - 200px);
     height: calc(100vh - 100px);
     padding-top: 100px;
     display: flex;
@@ -277,18 +283,11 @@ main {
     color: white;
 }
 
-/* Chicca */
-/* nasconde la scrollbar per Chrome, Safari and Opera */
-.main-dx::-webkit-scrollbar {
+.nav-xs {
     display: none;
-  }
-  
-  /* /* nasconde la scrollbar per IE, Edge e Firefox */
-  .main-dx {
-    -ms-overflow-style: none;  /* IE e Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
-  /* /Chicca */
+}
+
+
 
 .square img {
     width: 100%;
@@ -302,11 +301,11 @@ main {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: calc(100vw - 150px);
+    width: calc(100vw - 200px);
     position: fixed;
     z-index: 1;
     top: 0;
-    right: 0;
+
     height: 70px;
     padding-right: 15px;
     background-color: rgba(0, 0, 0, 0.226);
@@ -352,7 +351,7 @@ footer {
 }
 
 .footer-sx {
-    min-width: 200px;
+    min-width: 180px;
     display: flex;
     flex-wrap: wrap;
 
@@ -403,7 +402,7 @@ footer {
 .footer-center .center-up {
 
     width: 50%;
-    min-width: 150px;
+    min-width: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -498,35 +497,104 @@ footer .volume:hover {
 /* media query */
 
 @media screen and (max-width : 575px) {
+    header {
+        min-width: 50px;
+        
+    }
+
+    nav a {
+        padding-left: 0;
+
+    }
+
+    .logo {
+        width: 25px;
+        padding-top: 0;
+    }
+
+    .cont-logo {
+        width: 50%;
+        margin: auto;
+        padding-top: 5px;
+    }
+
+    .foot-header {
+        text-align: center;
+    }
+
+    .foot-header hr {
+        display: none;
+    }
+
+    .button-account {
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .navigation {
+        align-items: center;
+        padding-top: 15px;
+    }
+
+    .main-dx {
+        width: calc(100vw - 50px);
+    }
+
+    .bar-upgrade {
+        width: calc(100vw - 50px);
+    }
+
+    .footer-sx .icone-sx {
+        flex-direction: column;
+    }
+
+    .nav-xs {
+        display: block;
+    }
+
+    .nav-xl {
+        display: none;
+    }
+
     .row {
         flex-wrap: wrap;
     }
 
     .square {
-        width: calc((100vw - 180px) / 2 - (30px / 2) );
-        height: calc(((100vw - 180px) / 2 - (30px / 2 )) );
+        width: calc(((100vw - 50px) / 2 - 20px) );
+        height: calc(((100vw - 50px) / 2 - 20px) );
     }
 }
 
 @media screen and (min-width : 576px) and (max-width : 768px) {
+
+    .footer-sx .icone-sx {
+        flex-direction: column;
+    }
+
     .row {
         flex-wrap: wrap;
     }
 
     .square {
-        width: calc((100vw - 180px) / 2 - (30px / 2) );
-        height: calc(((100vw - 180px) / 2 - (30px / 2 )) );
+        width: calc(((100vw - 200px) / 2 - 20px) );
+        height: calc(((100vw - 200px) / 2 - 20px) );
     }
 }
 
 @media screen and (min-width : 768px) and (max-width : 992px) {
+
+    .footer-sx .icone-sx {
+        flex-direction: column;
+    }
+    
     .row {
         flex-wrap: wrap;
     }
 
     .square {
-        width: calc((100vw - 180px) / 4 - (30px / 4 * 3) );
-        height: calc(((100vw - 180px) / 4 - (30px / 4 * 3)) );
+        width: calc(((100vw - 200px) / 4 - 20px) );
+        height: calc(((100vw - 200px) / 4 - 20px) );
     }
 
 
