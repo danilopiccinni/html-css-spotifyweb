@@ -188,8 +188,9 @@ main {
     flex-wrap: wrap;
     gap: 10px;
 
-    word-wrap: break-word;
     padding-top: 20px;
+
+    
 
 }
 
@@ -227,6 +228,9 @@ main {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
+    min-width: calc(((100vw - 200px) / 6 - 20px) );
+    max-width:  calc(((100vw - 200px) / 6 - 20px) );
 
     word-wrap: break-word;
 
@@ -600,15 +604,16 @@ footer .volume:hover {
     }
 
     .details {
-        word-wrap: break-word;
+
+        min-width: calc(((100vw - 200px) / 2 - 20px) );
+        max-width:  calc(((100vw - 200px) / 2 - 20px) );
+
     }
 }
 
 @media screen and (min-width : 576px) and (max-width : 768px) {
 
-    .details {
-        word-wrap: break-word;
-    }
+
 
     .footer-sx .icone-sx {
         flex-direction: column;
@@ -622,13 +627,18 @@ footer .volume:hover {
         width: calc(((100vw - 200px) / 2 - 20px) );
         height: calc(((100vw - 200px) / 2 - 20px) );
     }
+
+    .details {
+
+        min-width: calc(((100vw - 200px) / 2 - 20px) );
+        max-width:  calc(((100vw - 200px) / 2 - 20px) );
+
+    }
 }
 
 @media screen and (min-width : 768px) and (max-width : 992px) {
 
-    .details {
-        word-wrap: break-word;
-    }
+
 
     .footer-sx .icone-sx {
         flex-direction: column;
@@ -641,6 +651,13 @@ footer .volume:hover {
     .square {
         width: calc(((100vw - 200px) / 4 - 20px) );
         height: calc(((100vw - 200px) / 4 - 20px) );
+    }
+
+    .details {
+
+        min-width: calc(((100vw - 200px) / 4 - 20px) );
+        max-width:  calc(((100vw - 200px) / 4 - 20px) );
+
     }
 
 
